@@ -1,0 +1,160 @@
+.curtain_left , .curtain_right{
+    z-index: 100;
+    position: absolute;
+    padding: 0;
+    height: 400vh;
+    background-color: black;
+}
+
+.curtain_left {
+    animation-duration: 3s;
+    animation-name: slide_left;
+}
+
+.curtain_right {
+    animation-duration: 3s;
+    animation-name: slide_right;
+}
+
+@keyframes slide_right {
+    from {
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 0%;
+    }
+}
+@keyframes slide_left {
+    from {
+        margin-right: 0%;
+        width: 100%
+    }
+    to {
+        margin-right: 100%;
+        width: 0%;
+    }
+}
+
+@keyframes circle {
+    from {
+        border-radius: 100%;
+        background-color: magenta;
+        opacity: 1;
+    }
+    to {
+        border-radius: 0%;
+        background-color: darkmagenta;
+        opacity: 0.5;
+    }
+}
+
+.ripple {
+    animation-duration: 3s;
+    animation-name: circle;
+    z-index: 10;
+}
+
+/*#loading
+{
+    z-index: 200;
+    color:#fff;
+    height: 100%;
+    width: 100%;
+}*/
+
+.bg_linear_grad{
+    background-image: linear-gradient(rgba(131, 3, 3, 0.46), rgba(130, 5, 5, 0.44));
+
+}
+
+.nav_linear_grad {
+    background-image: linear-gradient(rgba(114, 0, 0, 0.7), rgba(0, 0, 0));
+}
+
+.footer_bg {
+    background-image: linear-gradient(rgba( 0, 0, 0, 0.44), rgba(129, 0, 0, 0.46));
+}
+
+.main_bg_color {
+    color: rgba(0, 0, 0, 0.79);
+
+}
+h1 {
+    color: whitesmoke;
+}
+h1:hover {
+    color: darkred;
+}
+label {
+    color: whitesmoke;
+
+}
+input {
+    box-shadow: 0 0 3px 3px darkred;
+}
+
+body {
+    font-family: 'Abril Fatface', cursive;
+    background-color: black;
+}
+.lead {
+    color: whitesmoke;
+}
+
+.size{
+    height: 298px;
+    width: 188px;
+}
+
+.font{
+    font-family: 'Monoton', cursive;
+}
+
+.bigText{
+    font-size: x-large;
+}
+
+.marginL{
+    margin-left: 265px;
+}
+.img-one {
+
+}
+.img-one:hover {
+    transform: scale(1.2);
+}
+
+*#addPost {
+    color: whitesmoke;
+    background-color: darkred;
+    border: 2px solid goldenrod ;
+}
+#addPost:hover {
+    color: yellow;
+    transition: ease-in-out 0.3s;
+
+}
+.cards {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: 30px;
+
+}
+
+.milk {
+    color: #fff;
+    text-shadow:
+            0 0 7px red,
+            0 0 10px #fff,
+            0 0 21px red,
+            0 0 42px #0fa,
+            0 0 82px red,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+}
+
+
